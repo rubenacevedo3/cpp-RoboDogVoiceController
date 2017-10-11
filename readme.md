@@ -11,6 +11,12 @@ Simple starter C++ project with:
 - cmake
 - googletest
 
+## SIP Code Development Process
+Below is a link to the Product Backlog, Iteration Backlog, and Work Log for the development of this module
+
+https://docs.google.com/spreadsheets/d/1Evc1lwxYjVYgp8eVesqZZPQv8sxqJg0tbtugLbrcmqk/edit?usp=sharing
+
+
 ## Standard install via command-line
 ```
 git clone --recursive https://github.com/dpiet/cpp-boilerplate
