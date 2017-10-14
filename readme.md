@@ -14,7 +14,7 @@ Component Features:
 
 1. RoboDog Training Capabilities
 
-The robot can be trained to understand 8 different commands for the following actions:
+The robot can be trained to understand 7 different commands for the following actions:
 
 a. walk
 
@@ -24,13 +24,11 @@ c. turn left
 
 d. stop
 
-e. stay
+e. sit
 
-f. sit
+f. lie down
 
-g. lie down
-
-h. chase tail
+g. chase tail
 
 2. Converting microphone outputs to motion commands 
 Since the ACME RoboDog Microphone already takes in sound inputs and converts them into text files, the voice control component analyzes the text files outputted from the microphone and checks to see if a motion command was said. If it was then it correctly communicates to the robot’s motion controller to output the desired result. 
@@ -41,7 +39,7 @@ The user receives the RoboDog for the first time. When he/she turns on the voice
 
 Point of Caution:
 
-For the Demo to work, pre-recorded text files from the microphone module were used to create a microphone stub module. The way the demo gets away with “listening” is that the pre-recorded text files get inputted to the voice controller randomly. In addition, the robot’s motion module is also a stub class.  The stub motion module will output text in the form of “**<action>**”  to show that the voice controller sent a motion command  and it is being successfully executed by the  robot.    
+For the Demo to work, pre-recorded text files from the microphone module were used to create a microphone stub module. The way the demo gets away with “listening” is that the pre-recorded text files get inputted to the voice controller randomly. In addition, the robot’s motion module is also a stub class.  The stub motion module will output text in the form of “**<insert motion here>**” to show that the voice controller sent a motion command and it is being successfully executed by the robot.    
 
 
 ## SIP Code Development Process
