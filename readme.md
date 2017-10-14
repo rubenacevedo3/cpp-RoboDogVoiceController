@@ -15,13 +15,21 @@ Component Features:
 1. RoboDog Training Capabilities
 
 The robot can be trained to understand 8 different commands for the following actions:
+
 a. walk
+
 b. turn right
+
 c. turn left
+
 d. stop
+
 e. stay
+
 f. sit
+
 g. lie down
+
 h. chase tail
 
 2. Converting microphone outputs to motion commands 
