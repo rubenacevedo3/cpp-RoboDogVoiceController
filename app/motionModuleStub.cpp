@@ -12,10 +12,9 @@
  * with the VoiceController component in the future.
  */
 
+#include <motionModuleStub.hpp>
 #include <iostream>
 #include <string>
-#include <motionModuleStub.hpp>
-
 
   //! Executes a motion function
   /**
@@ -26,29 +25,21 @@
    *@return nothing
    */
 void motionModuleStub::executeMotion(const std::string cmdname) {
-
-	if (cmdname == "walk"){
-		std::cout << "**RoboDog walks**"<< std::endl;
-	}
-	else if (cmdname == "turn right"){
-		std::cout << "**RoboDog turns right**"<< std::endl;
-	}
-	else if (cmdname == "turn left"){
-		std::cout << "**RoboDog turns left**"<< std::endl;
-	}
-	else if (cmdname == "stop"){
-		std::cout << "**RoboDog stops**"<< std::endl;
-	}
-	else if (cmdname == "sit"){
-		std::cout << "**RoboDog sits**"<< std::endl;
-	}
-	else if (cmdname == "lie down"){
-		std::cout << "**RoboDog lies down**"<< std::endl;
-	}
-	else if (cmdname == "chase tail"){
-		std::cout << "**RoboDog chases its tail**"<< std::endl;
-	}
-	else {
-		std::cout << "**RoboDog does nothing**"<< std::endl;
-	}
+  if (cmdname == "walk") {
+    std::cout << "**RoboDog walks**"<< std::endl;
+  } else if (cmdname == "turn right") {
+    std::cout << "**RoboDog turns right**"<< std::endl;
+  } else if (cmdname == "turn left") {
+    std::cout << "**RoboDog turns left**"<< std::endl;
+  } else if (cmdname == "stop") {
+    std::cout << "**RoboDog stops**"<< std::endl;
+  } else if (cmdname == "sit") {
+    std::cout << "**RoboDog sits**"<< std::endl;
+  } else if (cmdname == "lie down") {
+    std::cout << "**RoboDog lies down**"<< std::endl;
+  } else if (cmdname == "chase tail") {
+    std::cout << "**RoboDog chases its tail**"<< std::endl;
+  } else {
+    std::cout << "**RoboDog does nothing**"<< std::endl;
+  }
 }

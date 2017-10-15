@@ -25,7 +25,6 @@
 class motionModuleStub {
   //! Public Methods
  public:
-
   //! Executes a motion function
   /**
    * This function simulates the execution of the motion given

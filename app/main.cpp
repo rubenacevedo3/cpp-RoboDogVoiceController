@@ -10,12 +10,11 @@
  *
  */
 
+#include <motionModuleStub.hpp>
 #include <iostream>
 #include <string>
-#include <motionModuleStub.hpp>
 
-int main()
-{
+int main() {
     motionModuleStub m;
     std::string cmd = "walk";
     m.executeMotion(cmd);
