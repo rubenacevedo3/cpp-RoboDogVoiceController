@@ -31,7 +31,7 @@ class motionModuleStub {
    * a command. It will print "**<inset motion here>**" stating that
    * the given motion is being done by the RoboDog Platform
    *@param a constant string representing the command name
-   *@return nothing
+   *@return a string that says the action that was done
    */
   std::string executeMotion(const std::string& cmdname);
 };
