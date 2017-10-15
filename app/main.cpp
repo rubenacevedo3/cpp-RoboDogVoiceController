@@ -14,6 +14,14 @@
 #include <iostream>
 #include <string>
 
+  //! the main function
+  /**
+   * This function is the int main() that runs the demo that
+   * simulates full functionality of the RoboDog
+   * Voice Controller component
+   *@param nothing
+   *@return an integer
+   */
 int main() {
   microphoneStub m;
   m.record("hello world");
@@ -27,4 +35,5 @@ int main() {
     std::cout << s << std::endl;
     i++;
   }
+  return 0;
 }

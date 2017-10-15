@@ -58,9 +58,17 @@ class microphoneStub {
    */
   void record(const std::string& as);
 
-  //! Private Attributes
+  //! get the audioSignals vector size function
+  /**
+   * This function returns the audioSignals vector size.
+   *@param nothing
+   *@return an integer representing the audioSignal vector size
+   */
+  int getAudioSignalsSize();
+
+  //! Public Attributes
  private:
-  //! audioSignlas vector
+  //! audioSignals vector
   /**
    * This is a vector containing "pre-recorded" audio signals which
    * will be eventually used to simulate that the microphoneStub is picking up random signals

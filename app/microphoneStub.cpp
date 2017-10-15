@@ -62,6 +62,10 @@ microphoneStub::microphoneStub() {
    *@return a string representing an audio signal
    */
 std::string microphoneStub::randomSignals() {
+  if (audioSignals.size() == 0) {
+    return "";
+  }
+
   auto r = rand() %audioSignals.size();
   return audioSignals[r];
 }
@@ -75,4 +79,14 @@ std::string microphoneStub::randomSignals() {
    */
 void microphoneStub::record(const std::string& as) {
   audioSignals.push_back(as);
+}
+
+//! get the audioSignals vector size function
+/**
+ * This function returns the audioSignals vector size.
+ *@param nothing
+ *@return an integer representing the audioSignal vector size
+ */
+int microphoneStub::getAudioSignalsSize() {
+  return audioSignals.size();
 }

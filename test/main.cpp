@@ -9,6 +9,14 @@
  */
 #include <gtest/gtest.h>
 
+  //! the main function
+  /**
+   * This function is the int main() that runs all the google test
+   * of the code
+   *@param an integer
+   *@param a char**
+   *@return an integer
+   */
 int main(int argc, char** argv) {
   ::testing::InitGoogleTest(&argc, argv);
   return RUN_ALL_TESTS();

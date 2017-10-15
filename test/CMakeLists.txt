@@ -7,6 +7,8 @@ add_executable(
     ../app/motionModuleStub.cpp
     commandTest.cpp
     ../app/command.cpp
+    microphoneStubTest.cpp
+    ../app/microphoneStub.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
