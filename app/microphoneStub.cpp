@@ -62,10 +62,6 @@ microphoneStub::microphoneStub() {
    *@return a string representing an audio signal
    */
 std::string microphoneStub::randomSignals() {
-  if (audioSignals.size() == 0) {
-    return "";
-  }
-
   auto r = rand() %audioSignals.size();
   return audioSignals[r];
 }
