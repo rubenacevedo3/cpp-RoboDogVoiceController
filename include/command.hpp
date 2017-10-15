@@ -8,8 +8,8 @@
  * command Class
  */
 
-#ifndef cpp-RoboDogVoiceController_include_command_hpp_
-#define cpp-RoboDogVoiceController_include_command_hpp_
+#ifndef include_command_hpp_
+#define include_command_hpp_
 
 #include <string>
 
@@ -74,4 +74,4 @@ class command {
   std::string commandName;
 };
 
-#endif  // cpp-RoboDogVoiceController_include_command_hpp_
+#endif  // include_command_hpp_

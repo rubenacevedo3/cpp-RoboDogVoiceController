@@ -10,19 +10,21 @@
  *
  */
 
-#include <command.hpp>
+#include <microphoneStub.hpp>
 #include <iostream>
 #include <string>
 
 int main() {
-  command c("walk");
-  auto s = c.getAudioString();
-  std::cout << "audio string is "<< s << std::endl;
-  auto n = c.getCommandName();
-  std::cout << "command name is  "<< n<< std::endl;
+  microphoneStub m;
+  m.record("hello world");
+  m.record("what is good");
+  m.record("I love game of thrones");
 
-  c.setAudioString("What up friends");
-  s = c.getAudioString();
-  std::cout << "audio string is " << s << std::endl;
-  return 0;
+  int i = 0;
+  std::string s;
+  while (i < 100) {
+    s = m.randomSignals();
+    std::cout << s << std::endl;
+    i++;
+  }
 }

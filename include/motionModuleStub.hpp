@@ -1,7 +1,7 @@
 /**
  *@author Ruben Acevedo
- *@file PIDController.hpp
- *@brief This is the ".hpp" file for the PIDController Class
+ *@file motionModuleStub.hpp
+ *@brief This is the ".hpp" file for the motionModuleStub Class
  *@copyright [2017] Ruben Acevedo
  *
  * This file will define the methods and attributes of the
@@ -12,8 +12,8 @@
  * with the VoiceController component in the future.
  */
 
-#ifndef cpp-RoboDogVoiceController_include_motionModuleStub_hpp_
-#define cpp-RoboDogVoiceController_include_motionModuleStub_hpp_
+#ifndef include_motionModuleStub_hpp_
+#define include_motionModuleStub_hpp_
 
 #include <string>
 
@@ -36,4 +36,4 @@ class motionModuleStub {
   std::string executeMotion(const std::string& cmdname);
 };
 
-#endif  // cpp-RoboDogVoiceController_include_motionModuleStub_hpp_
+#endif  // include_motionModuleStub_hpp_
