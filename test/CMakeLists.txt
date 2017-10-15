@@ -5,6 +5,8 @@ add_executable(
     main.cpp
     motionModuleStubTest.cpp
     ../app/motionModuleStub.cpp
+    commandTest.cpp
+    ../app/command.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
