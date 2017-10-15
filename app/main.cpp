@@ -10,13 +10,19 @@
  *
  */
 
-#include <motionModuleStub.hpp>
+#include <command.hpp>
 #include <iostream>
 #include <string>
 
 int main() {
-    motionModuleStub m;
-    std::string cmd = "wal";
-    cmd = m.executeMotion(cmd);
-    return 0;
+  command c("walk");
+  auto s = c.getAudioString();
+  std::cout << "audio string is "<< s << std::endl;
+  auto n = c.getCommandName();
+  std::cout << "command name is  "<< n<< std::endl;
+
+  c.setAudioString("What up friends");
+  s = c.getAudioString();
+  std::cout << "audio string is " << s << std::endl;
+  return 0;
 }

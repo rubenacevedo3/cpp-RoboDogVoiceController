@@ -21,7 +21,7 @@
    * This function simulates the execution of the motion given
    * a command. It will print "**<inset motion here>**" stating that
    * the given motion is being done by the RoboDog Platform
-   *@param a constant string representing the command name
+   *@param a constant string reference representing the command name
    *@return a string that says the action that was done
    */
 std::string motionModuleStub::executeMotion(const std::string& cmdname) {
