@@ -33,7 +33,7 @@ class motionModuleStub {
    *@param a constant string representing the command name
    *@return nothing
    */
-  void executeMotion(const std::string cmdname);
+  std::string executeMotion(const std::string& cmdname);
 };
 
 #endif  // cpp-RoboDogVoiceController_include_motionModuleStub_hpp_

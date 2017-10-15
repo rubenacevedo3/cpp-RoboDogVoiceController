@@ -22,24 +22,29 @@
    * a command. It will print "**<inset motion here>**" stating that
    * the given motion is being done by the RoboDog Platform
    *@param a constant string representing the command name
-   *@return nothing
+   *@return a string that says the action that was done
    */
-void motionModuleStub::executeMotion(const std::string cmdname) {
+std::string motionModuleStub::executeMotion(const std::string& cmdname) {
+  std::string action;
+
   if (cmdname == "walk") {
-    std::cout << "**RoboDog walks**"<< std::endl;
+    action = "**RoboDog walks**";
   } else if (cmdname == "turn right") {
-    std::cout << "**RoboDog turns right**"<< std::endl;
+    action = "**RoboDog turns right**";
   } else if (cmdname == "turn left") {
-    std::cout << "**RoboDog turns left**"<< std::endl;
+    action = "**RoboDog turns left**";
   } else if (cmdname == "stop") {
-    std::cout << "**RoboDog stops**"<< std::endl;
+    action = "**RoboDog stops moving**";
   } else if (cmdname == "sit") {
-    std::cout << "**RoboDog sits**"<< std::endl;
+    action = "**RoboDog sits**";
   } else if (cmdname == "lie down") {
-    std::cout << "**RoboDog lies down**"<< std::endl;
+    action = "**RoboDog lies down**";
   } else if (cmdname == "chase tail") {
-    std::cout << "**RoboDog chases its tail**"<< std::endl;
+    action = "**RoboDog chases its tail**";
   } else {
-    std::cout << "**RoboDog does nothing**"<< std::endl;
+    action = "**RoboDog does nothing**";
   }
+
+  std::cout << action << std::endl;
+  return action;
 }

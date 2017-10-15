@@ -16,7 +16,7 @@
 
 int main() {
     motionModuleStub m;
-    std::string cmd = "walk";
-    m.executeMotion(cmd);
+    std::string cmd = "wal";
+    cmd = m.executeMotion(cmd);
     return 0;
 }
