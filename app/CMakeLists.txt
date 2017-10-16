@@ -4,6 +4,7 @@ add_executable(
   motionModuleStub.cpp 
   command.cpp 
   microphoneStub.cpp
+  voiceController.cpp
  )
  
 include_directories(
