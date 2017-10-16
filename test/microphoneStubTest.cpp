@@ -9,7 +9,6 @@
  */
 #include <microphoneStub.hpp>
 #include <gtest/gtest.h>
-#include <string>
 
 //! test the microphoneStub constructor
 /**

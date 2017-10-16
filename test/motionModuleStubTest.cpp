@@ -9,7 +9,6 @@
  */
 #include <motionModuleStub.hpp>
 #include <gtest/gtest.h>
-#include <string>
 
 //! test for walk
 /**

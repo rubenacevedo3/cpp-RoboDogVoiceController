@@ -57,10 +57,12 @@ voiceController::voiceController() {
    */
 bool voiceController::matchCommand(const std::string& signal) {
   auto match = false;
+  std::string::size_type i = 0;
+  std::string::size_type c = 0;
 
   for (auto cmd : commandList) { /*!< search through the whole commandList */
-    int i = 0;
-    int c = 0;
+    i = 0;
+    c = 0;
     auto as = cmd.getAudioString(); /*!< gets the command's audio string */
   	/**
      * This while loop searches the whole

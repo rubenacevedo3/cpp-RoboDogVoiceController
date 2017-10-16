@@ -9,7 +9,6 @@
  */
 #include <command.hpp>
 #include <gtest/gtest.h>
-#include <string>
 
 //! test the class constructor audioString setting
 /**
