@@ -5,6 +5,7 @@ add_executable(
   command.cpp 
   microphoneStub.cpp
   voiceController.cpp
+  voiceControlInterface.cpp
  )
  
 include_directories(
