@@ -114,7 +114,7 @@ bool voiceControlInterface::listen(bool test) {
       std::cout << "*" << std::endl;
       std::cout << "*" << std::endl;
       if (test) {
-    	  exit = "y";
+        exit = "y";
       }
     }
 
@@ -171,8 +171,7 @@ bool voiceControlInterface::trainMode(bool test) {
     " RoboDog walk (type it in): " << std::endl;
   if (test != true) {
     std::getline(std::cin, c1);
-  }
-  else {
+  } else {
     c1 = "walk";
   }
   roboDogMicrophone.record(c1);
@@ -186,8 +185,7 @@ bool voiceControlInterface::trainMode(bool test) {
     "right (type it in): " << std::endl;
   if (test != true) {
     std::getline(std::cin, c2);
-  }
-  else {
+  } else {
     c2 = "right";
   }
   roboDogMicrophone.record(c2);
@@ -201,8 +199,7 @@ bool voiceControlInterface::trainMode(bool test) {
     "turn left (type it in): " << std::endl;
   if (test != true) {
     std::getline(std::cin, c3);
-  }
-  else {
+  } else {
     c3 = "left";
   }
   roboDogMicrophone.record(c3);
@@ -216,8 +213,7 @@ bool voiceControlInterface::trainMode(bool test) {
     "RoboDog stop (type it in): " << std::endl;
   if (test != true) {
     std::getline(std::cin, c4);
-  }
-  else {
+  } else {
     c4 = "stop";
   }
   roboDogMicrophone.record(c4);
@@ -231,8 +227,7 @@ bool voiceControlInterface::trainMode(bool test) {
     "RoboDog sit (type it in): " << std::endl;
   if (test != true) {
     std::getline(std::cin, c5);
-  }
-  else {
+  } else {
     c5 = "sit";
   }
   roboDogMicrophone.record(c5);
@@ -246,8 +241,7 @@ bool voiceControlInterface::trainMode(bool test) {
     "RoboDog lie down (type it in): " << std::endl;
   if (test != true) {
     std::getline(std::cin, c6);
-  }
-  else {
+  } else {
     c6 = "lie down";
   }
   roboDogMicrophone.record(c6);
@@ -261,8 +255,7 @@ bool voiceControlInterface::trainMode(bool test) {
     "chase its tail (type it in): " << std::endl;
   if (test != true) {
     std::getline(std::cin, c7);
-  }
-  else {
+  } else {
     c7 = "chase tail";
   }
   roboDogMicrophone.record(c7);

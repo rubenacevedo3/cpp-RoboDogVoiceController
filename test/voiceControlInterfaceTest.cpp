@@ -29,9 +29,9 @@ TEST(voiceControlInterfaceTest, constructorTest) {
  */
 TEST(voiceControlInterfaceTest, turnOnTest) {
   voiceControlInterface vci;
-  EXPECT_EQ("RoboDog Voice Control Interface is on",vci.turnOn());
+  EXPECT_EQ("RoboDog Voice Control Interface is on", vci.turnOn());
   EXPECT_TRUE(vci.isOn());
-  EXPECT_EQ("",vci.turnOn());
+  EXPECT_EQ("", vci.turnOn());
 }
 
 //! test the turn off function
@@ -42,9 +42,9 @@ TEST(voiceControlInterfaceTest, turnOnTest) {
 TEST(voiceControlInterfaceTest, turnOffTest) {
   voiceControlInterface vci;
   vci.turnOn();
-  EXPECT_EQ("RoboDog Voice Control Interface is off",vci.turnOff());
+  EXPECT_EQ("RoboDog Voice Control Interface is off", vci.turnOff());
   EXPECT_FALSE(vci.isOn());
-  EXPECT_EQ("",vci.turnOff());
+  EXPECT_EQ("", vci.turnOff());
 }
 
 //! test the listen function
@@ -54,7 +54,7 @@ TEST(voiceControlInterfaceTest, turnOffTest) {
  */
 TEST(voiceControlInterfaceTest, listenTest) {
   voiceControlInterface vci;
-  EXPECT_FALSE (vci.listen(true));
+  EXPECT_FALSE(vci.listen(true));
   vci.turnOn();
   EXPECT_TRUE(vci.listen(true));
 }
@@ -66,7 +66,7 @@ TEST(voiceControlInterfaceTest, listenTest) {
  */
 TEST(voiceControlInterfaceTest, trainModeTest) {
   voiceControlInterface vci;
-  EXPECT_FALSE (vci.trainMode(true));
+  EXPECT_FALSE(vci.trainMode(true));
   vci.turnOn();
   EXPECT_TRUE(vci.trainMode(true));
 }
