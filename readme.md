@@ -8,7 +8,7 @@
 
 Brief Explanation/Purpose:
 
-This is a self-contained voice control component in the control module of the Acme RoboDog Companion platform. The purpose of this component is to process the signals from the robot’s microphone component and translate them into motion commands that get inputted into the robot’s motion modules. The voice controller interface also allows for the robot to be trained by its owner. This permits the user to train the RoboDog using secret commands that only he/she would know. This voice control of motion component is a meaningful addition to the RoboDog platform since it makes controlling the robot more intuitive to the user and it allows the robot to be trained in a similar manner to how humans train real dogs. This gives the robot a more lifelike quality. In addition, the personal touch of training the RoboDog using the users own commands results in the user having a more intimate connection to the platform, thus adding more companionship between the user and the product. 
+This is a self-contained voice control component in the control module of the Acme RoboDog Companion platform. The purpose of this component is to process the signals from the robot’s microphone component and translate them into motion commands that get inputted into the robot’s motion module. The voice controller interface also allows for the robot to be trained by its owner. This permits the user to train the RoboDog using secret commands that only he/she would know. This voice control of motion component is a meaningful addition to the RoboDog platform since it makes controlling the robot more intuitive to the user and it allows the robot to be trained in a similar manner to how humans train real dogs. This gives the robot a more lifelike quality. In addition, the personal touch of training the RoboDog using the users own commands results in the user having a more intimate connection to the platform, thus adding more companionship between the user and the product. 
 
 Component Features:
 
@@ -31,24 +31,30 @@ f. lie down
 g. chase tail
 
 2. Converting microphone outputs to motion commands 
-Since the ACME RoboDog Microphone already takes in sound inputs and converts them into text files, the voice control component analyzes the text files outputted from the microphone and checks to see if a motion command was said. If it was then it correctly communicates to the robot’s motion controller to output the desired result. 
+
+Since the ACME RoboDog Microphone already takes in sound inputs and converts them into text files, the voice control component analyzes the text files outputted from the microphone and checks to see if a motion command was said. If it was then it correctly communicates to the robot’s motion module to output the desired action. 
 
 Performance Example: 
 
-The user receives the RoboDog for the first time. When he/she turns on the voice controller module he/she will be prompted to pick a setting. The two options are training or listening. The user first picks the training setting. He/She is prompted to say outload the command he wants to use for the robot to walk. He/She says “robodog mush”.  He/She then exits the training setting and selects the listening setting.  In this stage the robot’s microphone will be pick up anything that is said within earshot. The voice control module analyzes the text files that are being outputted from the microphone module and sends the walk command once it sees the phrase “robodog mush” in the text file. After the excitement of having the RoboDog listen to his/her secret command the user turns off the voice controller interface. 
+The user receives the RoboDog for the first time. When he/she turns on the voice controller interface he/she will be prompted to pick a setting. The three options are training, listening, or turn off. The user first picks the training setting. He/She is prompted to say outload the commands he/she wants to use for each of the robot's 7 action capabilites. He/She then exits the training setting and selects the listening setting. In this stage the robot’s microphone will pick up anything that is said within earshot. 
+
+Let's say that when the program promted the user for the command to make the robot walk the user said “robodog mush”. Now in the listening setting the user says "My dog is so cool. Watch. robodog mush". The voice control module analyzes the text files that are being outputted from the microphone module and sends the walk command once it sees the phrase “robodog mush” in the text file. After the excitement of having the RoboDog listen to his/her secret command the user turns off the voice controller interface. 
 
 Point of Caution:
 
-For the Demo to work, pre-recorded text files from the microphone module were used to create a microphone stub module. The way the demo gets away with “listening” is that the pre-recorded text files get inputted to the voice controller randomly. In addition, the robot’s motion module is also a stub class.  The stub motion module will output text in the form of “**<insert motion here>**” to show that the voice controller sent a motion command and it is being successfully executed by the robot.    
+For the Demo to work, pre-recorded text files from the microphone module were used to create a microphone stub module. The way the demo gets away with “listening” is that the pre-recorded text files get inputted to the voice controller randomly. In addition, the robot’s motion module is also a stub class.  The stub motion module will output text in the form of “**<insert motion here>**” to show that the voice controller sent a motion command and it is being successfully executed by the robot. 
 
 
 ## SIP Code Development Process
+
 Below is a link to the Product Backlog, Iteration Backlog, and Work Log for the development of this module
 
 https://docs.google.com/spreadsheets/d/1Evc1lwxYjVYgp8eVesqZZPQv8sxqJg0tbtugLbrcmqk/edit?usp=sharing
 
+
 ## License
-The MIT License
+
+MIT License
 
 Copyright 2017 Ruben Acevedo 
 
@@ -59,7 +65,9 @@ The above copyright notice and this permission notice shall be included in all c
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 © 2017 GitHub, Inc.
 
-## Standard install via command-line
+
+## How to Build and Run Demo and Test
+
 ```
 git clone --recursive https://github.com/rubenacevedo3/cpp-RoboDogVoiceController.git
 cd <path to repository>
@@ -71,16 +79,9 @@ Run tests: ./test/cpp-test
 Run program: ./app/shell-app
 ```
 
-## Building for code coverage
-```
-sudo apt-get install lcov
-cmake -D COVERAGE=ON -D CMAKE_BUILD_TYPE=Debug ../
-make
-make code_coverage
-```
-This generates a index.html page in the build/coverage sub-directory that can be viewed locally in a web browser.
 
 ## Working with Eclipse IDE ##
+
 
 ## Installation
 
@@ -100,10 +101,12 @@ cd RoboDogVoiceController-eclipse
 cmake -G "Eclipse CDT4 - Unix Makefiles" -D CMAKE_BUILD_TYPE=Debug -D CMAKE_ECLIPSE_VERSION=4.7.0 -D CMAKE_CXX_COMPILER_ARG1=-std=c++14 ../cpp-RoboDogVoiceController/
 ```
 
+
 ## Import
 
 Open Eclipse, go to File -> Import -> General -> Existing Projects into Workspace -> 
 Select "RoboDogVoiceController-eclipse" directory created previously as root directory -> Finish
+
 
 # Edit
 
@@ -114,6 +117,7 @@ Source files may be edited under the "[Source Directory]" label in the Project E
 
 To build the project, in Eclipse, unfold RoboDogVoiceController-eclipse project in Project Explorer,
 unfold Build Targets, double click on "all" to build all projects.
+
 
 ## Run
 
@@ -143,6 +147,7 @@ debugger window.
 7. Press Terminate icon to terminate debugging and press C/C++ icon to switch back to C/C++ 
 perspetive view (or Windows->Perspective->Open Perspective->C/C++).
 
+
 ## How to run cpplint 
 
 Use cpplint to identify potential source code issues that are in conflict with the Google C++ style guide. 
@@ -166,6 +171,7 @@ This command runs cpplint.py and tells the script to examine files with extensio
 Use cppcheck for static code analysis using the command-line from repository root "RoboDogVoiceController-eclipse"
 
 cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" )
+
 
 ## How to generate doxygen documentation
 
