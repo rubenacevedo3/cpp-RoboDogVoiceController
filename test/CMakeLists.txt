@@ -11,6 +11,8 @@ add_executable(
     ../app/microphoneStub.cpp
     voiceControllerTest.cpp
     ../app/voiceController.cpp
+    voiceControlInterfaceTest.cpp
+    ../app/voiceControlInterface.cpp
 )
 
 target_include_directories(cpp-test PUBLIC ../vendor/googletest/googletest/include 
