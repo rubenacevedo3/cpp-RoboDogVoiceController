@@ -1,0 +1,152 @@
+\hypertarget{classvoiceController}{}\section{voice\+Controller Class Reference}
+\label{classvoiceController}\index{voice\+Controller@{voice\+Controller}}
+
+
+A \hyperlink{classvoiceController}{voice\+Controller} Class.  
+
+
+
+
+{\ttfamily \#include $<$voice\+Controller.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classvoiceController_a8746e8b3c0efd2735b6b8a816fbacce4}{voice\+Controller} ()
+\begin{DoxyCompactList}\small\item\em Public Methods. \end{DoxyCompactList}\item 
+bool \hyperlink{classvoiceController_af851fc9ef22db782ec0e03a159c88711}{match\+Command} (const std\+::string \&signal)
+\begin{DoxyCompactList}\small\item\em match the command function \end{DoxyCompactList}\item 
+bool \hyperlink{classvoiceController_a8bcf53c67777c9808bc54c10001da941}{train} (const std\+::string \&cmdname, const std\+::string \&signal)
+\begin{DoxyCompactList}\small\item\em set the command\textquotesingle{}s audio string in the commandlist \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classcommand}{command} $>$ \hyperlink{classvoiceController_a400c690ab78be3dcb186aa22fcaacee4}{see\+Command\+List} ()
+\begin{DoxyCompactList}\small\item\em see the command list function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A \hyperlink{classvoiceController}{voice\+Controller} Class. 
+
+M\+IT License
+
+Copyright 2017 Ruben Acevedo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE. © 2017 Git\+Hub, Inc. This class is the root of the Voice Controller component. Its purpose is to match the audio signals from the microphone and translate it to commands it can send to the motion\+Module. This class stores all the commands that it can send to the motion\+Module and their respective trained audio signals 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{voice\+Controller@{voice\+Controller}!voice\+Controller@{voice\+Controller}}
+\index{voice\+Controller@{voice\+Controller}!voice\+Controller@{voice\+Controller}}
+\subsubsection[{\texorpdfstring{voice\+Controller()}{voiceController()}}]{\setlength{\rightskip}{0pt plus 5cm}voice\+Controller\+::voice\+Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classvoiceController_a8746e8b3c0efd2735b6b8a816fbacce4}{}\label{classvoiceController_a8746e8b3c0efd2735b6b8a816fbacce4}
+
+
+Public Methods. 
+
+Class Constructor.
+
+Class Constructor This code constructs the class. It initializes the command\+List vector with commands that have the appropriate command\+Names that can be sent to the Robo\+Dog Motion\+Module. The 7 commands that the robot can do are walk, turn right, turn left, stop, sit, lie down, and chase tail. It does not however assign as audio\+String to the command names. 
+\begin{DoxyParams}{Parameters}
+{\em nothing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing
+\end{DoxyReturn}
+M\+IT License
+
+Copyright 2017 Ruben Acevedo
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \char`\"{}\+Software\char`\"{}), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions\+:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. T\+HE S\+O\+F\+T\+W\+A\+RE IS P\+R\+O\+V\+I\+D\+ED \char`\"{}\+A\+S I\+S\char`\"{}, W\+I\+T\+H\+O\+UT W\+A\+R\+R\+A\+N\+TY OF A\+NY K\+I\+ND, E\+X\+P\+R\+E\+SS OR I\+M\+P\+L\+I\+ED, I\+N\+C\+L\+U\+D\+I\+NG B\+UT N\+OT L\+I\+M\+I\+T\+ED TO T\+HE W\+A\+R\+R\+A\+N\+T\+I\+ES OF M\+E\+R\+C\+H\+A\+N\+T\+A\+B\+I\+L\+I\+TY, F\+I\+T\+N\+E\+SS F\+OR A P\+A\+R\+T\+I\+C\+U\+L\+AR P\+U\+R\+P\+O\+SE A\+ND N\+O\+N\+I\+N\+F\+R\+I\+N\+G\+E\+M\+E\+NT. IN NO E\+V\+E\+NT S\+H\+A\+LL T\+HE A\+U\+T\+H\+O\+RS OR C\+O\+P\+Y\+R\+I\+G\+HT H\+O\+L\+D\+E\+RS BE L\+I\+A\+B\+LE F\+OR A\+NY C\+L\+A\+IM, D\+A\+M\+A\+G\+ES OR O\+T\+H\+ER L\+I\+A\+B\+I\+L\+I\+TY, W\+H\+E\+T\+H\+ER IN AN A\+C\+T\+I\+ON OF C\+O\+N\+T\+R\+A\+CT, T\+O\+RT OR O\+T\+H\+E\+R\+W\+I\+SE, A\+R\+I\+S\+I\+NG F\+R\+OM, O\+UT OF OR IN C\+O\+N\+N\+E\+C\+T\+I\+ON W\+I\+TH T\+HE S\+O\+F\+T\+W\+A\+RE OR T\+HE U\+SE OR O\+T\+H\+ER D\+E\+A\+L\+I\+N\+GS IN T\+HE S\+O\+F\+T\+W\+A\+RE. © 2017 Git\+Hub, Inc. This code constructs the class. It initializes the command\+List vector with commands that have the appropriate command\+Names that can be sent to the Robo\+Dog Motion\+Module. The 7 commands that the robot can do are walk, turn right, turn left, stop, sit, lie down, and chase tail. It does not however assign as audio\+String to the command names. 
+\begin{DoxyParams}{Parameters}
+{\em nothing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+nothing 
+\end{DoxyReturn}
+
+
+\subsection{Member Function Documentation}
+\index{voice\+Controller@{voice\+Controller}!match\+Command@{match\+Command}}
+\index{match\+Command@{match\+Command}!voice\+Controller@{voice\+Controller}}
+\subsubsection[{\texorpdfstring{match\+Command(const std\+::string \&signal)}{matchCommand(const std::string &signal)}}]{\setlength{\rightskip}{0pt plus 5cm}bool voice\+Controller\+::match\+Command (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{signal}
+\end{DoxyParamCaption}
+)}\hypertarget{classvoiceController_af851fc9ef22db782ec0e03a159c88711}{}\label{classvoiceController_af851fc9ef22db782ec0e03a159c88711}
+
+
+match the command function 
+
+This function checks to see if any of the command\textquotesingle{}s audio\+String in the command\+List is in the inputed string. If it is then it outputs the command name to the motion\+Module and returns true. If there is no match then it returns false and does nothing. This is how the Voice Controller checks to see if the user said a trained command to the Robo\+Dog. 
+\begin{DoxyParams}{Parameters}
+{\em a} & constant string reference representing a microphone output \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool stating whether or not a command was matched 
+\end{DoxyReturn}
+$<$ search through the whole command\+List
+
+$<$ gets the command\textquotesingle{}s audio string
+
+This while loop searches the whole signal to see if the command\textquotesingle{}s audio string is in the signal
+
+$<$ searches through the whole signal
+
+This means it found the command\textquotesingle{}s complete audio string in the signal
+
+This sends the command to the motion\+Module\index{voice\+Controller@{voice\+Controller}!see\+Command\+List@{see\+Command\+List}}
+\index{see\+Command\+List@{see\+Command\+List}!voice\+Controller@{voice\+Controller}}
+\subsubsection[{\texorpdfstring{see\+Command\+List()}{seeCommandList()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::vector$<$ {\bf command} $>$ voice\+Controller\+::see\+Command\+List (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{classvoiceController_a400c690ab78be3dcb186aa22fcaacee4}{}\label{classvoiceController_a400c690ab78be3dcb186aa22fcaacee4}
+
+
+see the command list function 
+
+This function outputs a replica of the command\+List so people can see what is in it but not modify it 
+\begin{DoxyParams}{Parameters}
+{\em nothing} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+it returns a command vector that matches the command\+List 
+\end{DoxyReturn}
+\index{voice\+Controller@{voice\+Controller}!train@{train}}
+\index{train@{train}!voice\+Controller@{voice\+Controller}}
+\subsubsection[{\texorpdfstring{train(const std\+::string \&cmdname, const std\+::string \&signal)}{train(const std::string &cmdname, const std::string &signal)}}]{\setlength{\rightskip}{0pt plus 5cm}bool voice\+Controller\+::train (
+\begin{DoxyParamCaption}
+\item[{const std\+::string \&}]{cmdname, }
+\item[{const std\+::string \&}]{signal}
+\end{DoxyParamCaption}
+)}\hypertarget{classvoiceController_a8bcf53c67777c9808bc54c10001da941}{}\label{classvoiceController_a8bcf53c67777c9808bc54c10001da941}
+
+
+set the command\textquotesingle{}s audio string in the commandlist 
+
+This function checks to see if the cmdname is a command name for one of the commands in the command list. If it is not then it outputs false. If it is then it sets that command\textquotesingle{}s audio\+String to be the inputed signal string and outputs true. 
+\begin{DoxyParams}{Parameters}
+{\em a} & constant string reference representing a command name \\
+\hline
+{\em a} & constant string reference representing a microphone signal \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a bool stating whether or not a command was trained 
+\end{DoxyReturn}
+$<$ search through the whole command\+List
+
+This sets the command\textquotesingle{}s audio signal to be the inputed signal;
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/viki/robodogworkspace/cpp-\/\+Robo\+Dog\+Voice\+Controller/include/\hyperlink{voiceController_8hpp}{voice\+Controller.\+hpp}\item 
+/home/viki/robodogworkspace/cpp-\/\+Robo\+Dog\+Voice\+Controller/app/\hyperlink{voiceController_8cpp}{voice\+Controller.\+cpp}\end{DoxyCompactItemize}
