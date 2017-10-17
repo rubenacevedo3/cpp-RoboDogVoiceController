@@ -61,10 +61,16 @@ class voiceControlInterface {
    * voiceController to send commands to the motionModule if the microphone
    * signals contain a motion command audio string. It will do this only
    * if the interface is on.
-   * @param nothing
+   * It is important to note that this function requires
+   * the user to input strings. For this reason it is difficult to
+   * write a unit test for it so you must enter a bool as a parameter
+   * indicating if you are using this function in a unit test or not.
+   * If you are using it as a unit test then the function will pre-sets
+   * all the user input values.
+   * @param a bool stating if this function is called by a unit test
    * @return a bool stating if the interface is on or not
    */
-  bool listen();
+  bool listen(bool test);
 
   //! the train mode function
   /**
@@ -73,10 +79,16 @@ class voiceControlInterface {
    * using a microphone stub we prompt the user to type in the audio
    * string for each command.
    * This function will only be executed if the interface is on.
-   * @param nothing
+   * It is important to note that this function requires
+   * the user to input strings. For this reason it is difficult to
+   * write a unit test for it so you must enter a bool as a parameter
+   * indicating if you are using this function in a unit test or not.
+   * If you are using it as a unit test then the function will pre-sets
+   * all the user input values.
+   * @param a bool stating if this function is called by a unit test
    * @return a bool stating if the interface is on or not
    */
-  bool trainMode();
+  bool trainMode(bool test);
 
   //! is on function
   /**

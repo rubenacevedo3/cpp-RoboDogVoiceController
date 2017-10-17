@@ -54,9 +54,9 @@ TEST(voiceControlInterfaceTest, turnOffTest) {
  */
 TEST(voiceControlInterfaceTest, listenTest) {
   voiceControlInterface vci;
-  EXPECT_FALSE (vci.listen());
-  //vci.turnOn();
-  //EXPECT_TRUE(vci.listen());
+  EXPECT_FALSE (vci.listen(true));
+  vci.turnOn();
+  EXPECT_TRUE(vci.listen(true));
 }
 
 //! test the train function
@@ -66,7 +66,7 @@ TEST(voiceControlInterfaceTest, listenTest) {
  */
 TEST(voiceControlInterfaceTest, trainModeTest) {
   voiceControlInterface vci;
-  EXPECT_FALSE (vci.trainMode());
-  //vci.turnOn();
-  //EXPECT_TRUE(vci.trainMode());
+  EXPECT_FALSE (vci.trainMode(true));
+  vci.turnOn();
+  EXPECT_TRUE(vci.trainMode(true));
 }

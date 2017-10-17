@@ -25,7 +25,7 @@
 int main() {
   voiceControlInterface vci;
   vci.turnOn();
-  vci.trainMode();
-  vci.listen();
+  vci.trainMode(false);
+  vci.listen(false);
   vci.turnOff();
 }
